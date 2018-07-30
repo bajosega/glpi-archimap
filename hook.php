@@ -30,12 +30,12 @@ function plugin_archimap_install() {
    include_once (GLPI_ROOT."/plugins/archimap/inc/profile.class.php");
 
    $update=false;
-   if ($DB->TableExists("glpi_plugin_archiapp_graphs")) {
+   if (TableExists("glpi_plugin_archiapp_graphs")) {
       
       $DB->runFile(GLPI_ROOT ."/plugins/archimap/sql/update-1.0.0.sql");
 
    }
-   if (!$DB->TableExists("glpi_plugin_archimap_graphs")) {
+   if (!TableExists("glpi_plugin_archimap_graphs")) {
 
 		$DB->runFile(GLPI_ROOT ."/plugins/archimap/sql/empty-1.0.0.sql");
 	}
@@ -47,7 +47,7 @@ function plugin_archimap_install() {
 	}
 */
    
-   if ($DB->TableExists("glpi_plugin_archimap_profiles")) {
+   if (TableExists("glpi_plugin_archimap_profiles")) {
    
       $notepad_tables = array('glpi_plugin_archimap_graphs');
 
