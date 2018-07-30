@@ -24,7 +24,7 @@
 	<versions>
 		<version>
 			<num>2.0.1</num>
-			<compatibility>9.2</compatibility>
+			<compatibility>9.1</compatibility>
 		</version>
 	</versions>
 	<langs>
