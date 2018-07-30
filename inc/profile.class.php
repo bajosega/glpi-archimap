@@ -182,7 +182,7 @@ class PluginArchimapProfile extends Profile {
    static function migrateOneProfile($profiles_id) {
       global $DB;
       //Cannot launch migration if there's nothing to migrate...
-      if (!$DB->TableExists('glpi_plugin_archimap_profiles')) {
+      if (!TableExists('glpi_plugin_archimap_profiles')) {
       return true;
       }
 
